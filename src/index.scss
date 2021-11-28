@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: 'DoublePixel7';
+    src: local('DoublePixel7'),
+         url('./assets/DoublePixel7.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Cuprum', sans-serif;
+  color: #3E539D;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text-ui {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.text-button {
+  @extend .text-ui;
+  text-transform: uppercase;
+}
+
+.bg-ui {
+  background-color: #F0743F;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+input, input:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
