@@ -1,6 +1,16 @@
+@import './index.scss';
+
 .app {
   @apply w-full h-full;
 
   background-color: #B2F0F9;
   background-image: url('./assets/bg.svg');
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.question {
+  @apply text-2xl leading-relaxed text-ui text-center
 }
